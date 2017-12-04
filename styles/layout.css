@@ -1,0 +1,64 @@
+main, header{
+  margin: 0 4vw;
+  border-style: solid;
+  background-color: #999;
+}
+
+main {
+  border-top: none;
+}
+
+@media screen and (min-width: 800px){
+  main, header {
+    width: 958px;
+  }
+
+  header {
+    height: 98px;
+  }
+
+  aside, section {
+    border-color: inherit;
+    border-width: inherit;
+    /*border-bottom-style: solid;*/
+  }
+
+  aside, li{
+    float: left;
+    border-right-style: solid;
+  }
+
+  aside{
+    width: 198px;
+    height: 598px;
+  }
+
+  section {
+    height: 148px;
+  }
+
+  li {
+      border-bottom-style: solid;
+  }
+
+  li:last-child {
+    border-right: none;
+  }
+
+  .bi-column, .bi-column li{
+    height: 198px;
+  }
+
+  .bi-column li{
+    width: 379px
+  }
+
+  .quad-column, .quad-column li{
+    height: 248px;
+  }
+
+ .quad-column li{
+    width: 189px;
+  }
+
+}
