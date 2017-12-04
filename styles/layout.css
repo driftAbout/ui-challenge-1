@@ -1,0 +1,122 @@
+main, header{
+  margin: 0 4vw;
+  border-style: solid;
+  background-color: #999;
+}
+
+main {
+  border-top: none;
+}
+
+header {
+  height: 73px;
+  line-height: 73px;
+}
+
+aside, section {
+  border-color: inherit;
+  border-width: inherit;
+}
+
+aside{
+  height: 148px;
+  line-height: 148px;
+}
+
+aside, li {
+    border-bottom-style: solid;
+}
+
+section {
+  height: 78px;
+  line-height: 78px;
+}
+
+.bi-column li {
+  height: 123px;
+  line-height: 123px;
+}
+
+.quad-column{
+  height:496px;
+}
+
+.quad-column li{
+  float: left;
+  width: 49.8%;
+  height: 248px;
+  line-height: 248px;
+  border-right-style: solid;
+}
+
+.quad-column li:nth-child(2) {
+  border-right-style: none;
+}
+
+.quad-column li:last-child {
+  border-right: none;
+}
+
+p {
+  text-align: center;
+  margin: 0;
+}
+
+@media screen and (min-width: 800px){
+  main, header {
+    width: 958px;
+  }
+
+  header {
+    height: 98px;
+    line-height: 98px;
+  }
+
+  aside{
+    /*width: 198px;*/
+    width: 20.6%;
+    height: 598px;
+    line-height: 598px;
+    border-bottom-style: none;
+  }
+
+  aside, li{
+    float: left;
+    border-right-style: solid;
+  }
+
+  section {
+    width: 79.4%;
+    height: 149px;
+    line-height: 149px;
+    margin-left: 20.6%;
+  }
+
+  .bi-column, .bi-column li{
+    height: 199px;
+    line-height: 199px;
+  }
+
+  .bi-column li{
+    /*width: 379px*/
+    width: 39.5%;
+  }
+
+  .quad-column, .quad-column li{
+    height:249px;
+    line-height: 249px;
+  }
+
+ .quad-column li{
+    width: 19.7%;
+  }
+
+  .quad-column li:nth-child(2) {
+    border-right-style: solid;
+  }
+
+  li:last-child {
+    border-right: none;
+  }
+
+}
